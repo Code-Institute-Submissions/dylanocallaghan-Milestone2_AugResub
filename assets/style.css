@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: "Playfair Display SC", sans-serif;
+    margin: 0;
+}
+
+/* header*/
+
+header {
+    background-color: blue;
+    color: #fafafa;
+}
+
+.uppercase {
+    text-transform: uppercase!important;
+}
+
+.no-transform {
+    text-transform: none!important;
+}
+
+.page-heading {
+    font-size: 6rem;
+    padding-top: 2rem;
+    font-weight: 900;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* footer */
+
+#footer {
+    background-color: green;
+    margin: 0%;
+}
+
+/* section */
+
+#myCanvas {
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
