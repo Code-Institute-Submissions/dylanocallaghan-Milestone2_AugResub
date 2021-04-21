@@ -37,16 +37,44 @@ class Bullet {
         ctx.fillStyle = this.color
         ctx.fill()
     }
+
+    change() {
+        this.design()
+        this.x = this.x + this.velocity.x
+        this.y = this.y + this.velocity.y
+    }
 }
 
 const x = canvas.width / 2
 const y = canvas.height / 2
 
 const user = new User(x, y, 30, 'blue')
-user.design()
+
+const bullet = new Bullet(canvas.width / 2, canvas.height / 2, 5, 'green', {
+        x:-1,
+        y:-1
+    })
+
+const bullets = []
+
+function animate() {
+    requestAnimationFrame (animate)
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    user.design()
+    bullets.forEach(bullet=> {
+        bullet.change()
+    });
+}
 
 addEventListener('click', (event) => {
-    const bullet = new Bullet(event.clientX, event.clientY, 5, 'red', null)
-
-bullet.design()
+    const angle = Math.atan2(event.clientY - canvas.height / 2, event.clientX - canvas.width / 2)
+    const velocity = {
+        x: Math.cos(angle),
+        y: Math.sin(angle)
+    }
+    
+    bullets.push(new Bullet(canvas.width / 2, canvas.height / 2, 5, 'red', velocity)
+    )
 })
+
+animate()
