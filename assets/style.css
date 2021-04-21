@@ -10,6 +10,8 @@ body {
 header {
     background-color: blue;
     color: #fafafa;
+    width: 100vw;
+    height: 15vh;
 }
 
 .uppercase {
@@ -21,30 +23,43 @@ header {
 }
 
 .page-heading {
-    font-size: 6rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-weight: 900;
 }
 
 .sub-heading {
-    font-size: 2rem;
-    padding-bottom: 2rem;
+    
     font-weight: 600;
 }
 
 /* footer */
 
 #footer {
-    background-color: green;
-    margin: 0%;
+    margin: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
 }
 
 /* section */
 
-#myCanvas {
-    position: absolute;
-    height: 75%;
-    width: 100%;
-    left: 0;
-    right: 0;
+section {
+    height: 75vh;
+    width: 100vw;
+    margin: 0;
 }
+
+canvas {
+    height: 75vh;
+    width: 100vw;
+}
+
+
+ @media only screen and (max-width: 992px) {
+     h1 {
+         font-size: larger;
+     }
+     h3 {
+         font-size: medium;
+     }
+ }
