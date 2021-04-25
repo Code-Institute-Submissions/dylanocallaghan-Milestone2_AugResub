@@ -1,8 +1,8 @@
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
 
-canvas.width = innerWidth
-canvas.height = innerHeight
+canvas.width = 600
+canvas.height = 400
 
 let spacePressed = false;
 let angle = 0;
@@ -16,7 +16,10 @@ function animate() {
     //ctx.fillRect(10, 10, 50, 50);
     bird.update();
     bird.draw();
+    handleParticles();
     requestAnimationFrame(animate);
+    angle+=0.06;
+    hue++;
 }
 animate();
 
