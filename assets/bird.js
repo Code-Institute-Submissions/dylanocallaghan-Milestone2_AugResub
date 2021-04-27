@@ -14,7 +14,7 @@ class Bird {
             this.vy = 0;
         } else {
         this.vy += this.weight;
-        this.vy *= 0.6;
+        this.vy *= 0.7;
         this.y += this.vy;
         }
         if (this.y < 0 + this.height) {
