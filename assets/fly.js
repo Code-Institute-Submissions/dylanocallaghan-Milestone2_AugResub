@@ -95,7 +95,7 @@ function handleCollisions() {
     }
 }
 
-window.addEventListener('click', ()=> {
+startGameBtn.addEventListener('click', ()=> {
     init();
     animate();
     modalEl.style.display = 'none'
