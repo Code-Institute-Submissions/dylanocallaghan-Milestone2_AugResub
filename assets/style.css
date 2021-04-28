@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 body {
-    font-family: "Playfair Display SC", sans-serif;
+    font-family: "Playfair Display SC", sans-serif !important;
     margin: 0;
+    user-select: none;
 }
 
 /* header*/
@@ -14,21 +15,17 @@ header {
     height: 15vh;
 }
 
-.uppercase {
-    text-transform: uppercase!important;
-}
-
-.no-transform {
-    text-transform: none!important;
-}
-
 .page-heading {
     padding-top: 1rem;
     font-weight: 900;
 }
 
+h1, h2, h3, h4, h5, h6 {
+     font-size: initial; 
+    font-weight: inherit;
+}
+
 .sub-heading {
-    
     font-weight: 600;
 }
 
@@ -41,13 +38,19 @@ header {
     background-color: black;
 }
 
+/* modal */
+
+.end-game-UI {
+    margin: 15rem;
+}
+
 /* section */
 
 section {
     height: 75vh;
     width: 100vw;
     margin: 0;
-    text-align: right;
+    text-align: right !important;
     padding-top: .5%;
     padding-right: .5%;
 }
@@ -56,8 +59,8 @@ canvas {
     height:73vmin;
     width: 100vmin;
     border: 2px solid black;
+    display: inline !important;
 }
-
 
  @media only screen and (max-width: 992px) {
      h1 {
@@ -65,5 +68,8 @@ canvas {
      }
      h3 {
          font-size: medium;
+     }
+     .end-game-UI{
+         margin-right: 8rem;
      }
  }

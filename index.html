@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- Link to style sheets -->
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- Link to tailwindcss -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!--  favicons-->
 
     <title>DeadShot</title>
@@ -27,8 +29,15 @@
     </header>
 
     <section>
+        <div class="fixed inset-0 flex items-center justify-end">
+            <div class="bg-black text-white max-w-md w-full p-6 end-game-UI text-center">
+                <h1 class="text-5xl font-bold">0</h1>
+                <p class="text-m text-grey-700 mb-4">Points</p>
+                <button class="bg-blue-500 w-full py-3 rounded-full">Start Game</button>
+            </div>
+        </div>
         <canvas>
-            
+
         </canvas>
     </section>
 
