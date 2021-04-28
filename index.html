@@ -29,14 +29,15 @@
     </header>
 
     <section>
-        <div class="fixed inset-0 flex items-center justify-end">
-            <div class="bg-black text-white max-w-md w-full p-6 end-game-UI text-center">
-                <h1 class="text-5xl font-bold">0</h1>
+        <div class="fixed inset-0 flex items-center justify-end" id="modalEl">
+            <div class="text-white max-w-md w-full p-6 end-game-UI text-center
+            bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded-full font-bold">
+                <h1 class="text-5xl font-bold" id="bigScoreEl">0</h1>
                 <p class="text-m text-grey-700 mb-4">Points</p>
-                <button class="bg-blue-500 w-full py-3 rounded-full">Start Game</button>
+                <button id="startGameBtn" class="bg-blue-500 w-75 py-3 rounded-full font-bold">Start Game</button>
             </div>
         </div>
-        <canvas>
+        <canvas class="bg-gradient-to-r from-blue-300 via-green-500 to-green-100">
 
         </canvas>
     </section>

@@ -1,5 +1,3 @@
-const obstaclesArray = [];
-
 class Obstacle {
     constructor() {
         this.top = (Math.random() * canvas.height/2.5) + 20;

@@ -60,6 +60,7 @@ canvas {
     width: 100vmin;
     border: 2px solid black;
     display: inline !important;
+    /*background-color: #90EE90;*/
 }
 
  @media only screen and (max-width: 992px) {

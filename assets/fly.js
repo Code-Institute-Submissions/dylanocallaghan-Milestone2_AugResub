@@ -1,8 +1,14 @@
 const canvas = document.querySelector('canvas')
+const startGameBtn = document.querySelector('#startGameBtn')
+const modalEl = document.querySelector('#modalEl')
+const bigScoreEl = document.querySelector('#bigScoreEl')
 const ctx = canvas.getContext('2d')
 
 canvas.width = 600
 canvas.height = 400
+
+let particlesArray = []
+let obstaclesArray = []
 
 let spacePressed = false;
 let angle = 0;
@@ -34,6 +40,12 @@ function handleBackground(){
     ctx.drawImage(background, BG.x2, BG.y, BG.width, BG.height) ;
 }
 
+function init() {
+    obstaclesArray = [];
+    particlesArray = [];
+    score = 0;
+}
+
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     //ctx.fillRect(10, 10, 50, 50);
@@ -53,7 +65,6 @@ function animate() {
     hue++;
     frame++;
 }
-animate();
 
 window.addEventListener('keydown', function(e) {
     if (e.code === 'Space') spacePressed = true;
@@ -73,11 +84,19 @@ function handleCollisions() {
             (bird.y > canvas.height - obstaclesArray[i].bottom &&
             bird.y + bird.height < canvas.height))){
                 ctx.drawImage(hit, bird.x, bird.y, 50, 50); 
-                ctx.font = "25px sans-serif";
-                ctx.fillStyle = 'black';
-                ctx.fillText('Game Over, your score is ' + score, 160, canvas.height/2 - 10);
+                //ctx.font = "25px sans-serif";
+                //ctx.fillStyle = 'black';
+                //ctx.fillText('Game Over, your score is ' + score, 160, canvas.height/2 - 10);
+                modalEl.style.display = 'flex'
+                bigScoreEl.innerHTML = score
                 
                 return true;
             }
     }
 }
+
+window.addEventListener('click', ()=> {
+    init();
+    animate();
+    modalEl.style.display = 'none'
+})

@@ -8,8 +8,8 @@ class Bird {
         this.vy = 0;
         this.originalWidth = 719;
         this.originalHeight = 612;
-        this.width = this.originalWidth/20;
-        this.height = this.originalHeight/20;
+        this.width = this.originalWidth/25;
+        this.height = this.originalHeight/25;
         this.weight = 1;
         this.frameX = 0;
     }
@@ -31,7 +31,7 @@ class Bird {
     }
     draw() {
         ctx.fillStyle = 'red';
-        ctx.drawImage(birdySprite, this.frameX * this.originalWidth, 0, this.originalWidth, this.originalHeight, this.x - 13, this.y- 7, this.width * 1.5, this.height * 1.5);
+        ctx.drawImage(birdySprite, this.frameX * this.originalWidth, 0, this.originalWidth, this.originalHeight, this.x - 13, this.y- 15, this.width * 1.5, this.height * 1.5);
     }
     flap() {
         this.vy -= 2;

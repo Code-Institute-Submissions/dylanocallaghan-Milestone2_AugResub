@@ -1,5 +1,3 @@
-const particlesArray = [];
-
 class Particle {
     constructor() {
         this.x = bird.x;
