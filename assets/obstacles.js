@@ -16,6 +16,9 @@ class Obstacle {
         this.x -= gamespeed;
         if(!this.counted && this.x < bird.x) {
             score++;
+            if ((score%20) === 0) {
+                gamespeed ++;
+            }
             this.counted = true;
         }
         this.draw(); 
