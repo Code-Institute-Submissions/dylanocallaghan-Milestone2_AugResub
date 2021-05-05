@@ -44,6 +44,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 15rem;
 }
 
+#modal2{
+    display: none;
+}
+
 /* section */
 
 section {
@@ -62,7 +66,6 @@ canvas {
     display: inline !important;
     /*background-color: #90EE90;*/
 }
-
  @media only screen and (max-width: 992px) {
      h1 {
          font-size: larger;
