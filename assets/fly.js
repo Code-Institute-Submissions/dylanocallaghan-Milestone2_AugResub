@@ -37,7 +37,9 @@ const BG = {
 }
 function handleBackground(){
     if (BG.x1 <= -BG.width + gamespeed) BG.x1 = BG.width;
-    else BG.x1 =- gamespeed;
+    else BG.x1 -= gamespeed;
+    if (BG.x2 <= -BG.width + gamespeed) BG.x2 = BG.width;
+    else (BG.x2-= gamespeed)
     ctx.drawImage(background, BG.x1, BG.y, BG.width, BG.height) ;
     ctx.drawImage(background, BG.x2, BG.y, BG.width, BG.height) ;
 }
