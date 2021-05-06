@@ -49,6 +49,7 @@ i {
 
 i:hover{
    color: white;
+   transition: all ease-in-out .25s;
 }
 
 p {
@@ -75,6 +76,11 @@ p a:link:hover {
     display: none;
 }
 
+#bg-modal{
+    background-color: #98FB98 !important;
+    color: blue !important;
+}
+
 /* section */
 
 section {
@@ -94,10 +100,16 @@ canvas {
     /*background-color: #90EE90;*/
 }
 
+#startGameBtn {
+    color: #fafafa;
+}
+
 button:hover {
     background-color: #fafafa;
-    color: blue;
+    color: blue !important;
+    transition: all ease-in-out .25s;
 }
+
 
  @media only screen and (max-width: 1605px) {
      h1 {
@@ -116,8 +128,5 @@ button:hover {
      footer a i {
         font-size: .65rem !important;
         font-weight: 900 !important;
-     }
-     #section {
-         text-align: center !important;
      }
  }
