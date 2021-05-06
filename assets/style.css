@@ -9,8 +9,8 @@ body {
 /* header*/
 
 header {
-    background-color: blue;
-    color: #98FB98;
+    background-color: #98FB98;
+    color: blue;
     width: 100vw;
     height: 15vh;
     text-transform: uppercase;
@@ -48,7 +48,7 @@ i {
 }
 
 i:hover{
-   color: black;
+   color: white;
 }
 
 p {
@@ -61,7 +61,7 @@ p a {
 }
 
 p a:link:hover {
-    color: black;
+    color: white;
     transition: all ease-in-out .25s;
 }
 
