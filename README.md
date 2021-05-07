@@ -29,7 +29,6 @@ This Website was created for the sole purpose of completing the second Milestone
     * [Test Results](#Test-Results)
     * [Isses and Resolutions](#Issues-and-Resolutions-to-issues-found-during-testing)
 * [Deployment](#Deployment)
-    * [Project Creation](#Project-Creation)
     * [GitHub Pages](#Using-Github-Pages)
     * [Locally](Run-Locally)
 * [Credits](#Credits)
@@ -193,7 +192,7 @@ Game Board background colour: Multicoloured <br>
 Header and Footer background: A light greeen #98FB98<br>
 
 #### Typography
-All the text within the body is in the font [Times] including all modals and buttons.
+All the text within the body is in the font "Times" including all modals and buttons.
 
 #### Imagery
 The image of the bird was take from OpenGameArt.org and was used by making the images into a sprite with codeandweb.com.
