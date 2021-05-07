@@ -67,13 +67,13 @@ Features planned:
 * Game Instructions - Clear instructions on how to play the game before starting the game.
 * Start Button.
 * Score Count.
-* Score displayed.
+* Score displayed at end game.
 * Restart Game button.
 * Game over message supplied.
 * Footer Items - Contact Information and link GitHub Profile / Repository.
 
 **Feature Importance/Effort** <br>
-![Features](assets/images/scope.jpg)
+![Features]()
 
 ### **The Structure Plane**
 
@@ -183,3 +183,148 @@ GitHub Repositpry information will be displayed in the footer. This should conta
 Desktop aim
 ![Wireframes](assets/wireframe.jpg)
 
+### **The Surface Plane**
+### Design
+
+#### Colour Scheme
+Body colour: White<br>
+Text colour: blue<br> 
+Game Board background colour: multicoloured <br>
+Header and Footer background: A light greeen #98FB98<br>
+
+#### Typography
+All the text within the body is in the font [Times] including all modals and buttons.
+
+#### Imagery
+The image of the bird was take from OpenGameArt.org and was used by making the images into a sprite with codeandweb.com.
+
+#### Differences to Design
+
+All features listed in The Scope Plane were implemented as per design.
+
+****
+## Features
+
+### Existing Features
+
+* Heading and Sub-heading.
+* Game Instructions.
+* Scorecount.
+* Spacebar input.
+* Buttons to start and re-start game.
+* Footer - Contact Information and GitHub Repo Information
+
+### Features Left to Implement
+
+* Levels: 'Easy' and 'Hard' mode will be added in a future release. The easy level will be at a slow speed with the obstaclefurther apart to give the user an easier chance to make it past obstacles. Hard mode will start with the speed faster, also the obstacles will be closer together to give a more challenging expierence for the user.
+
+****
+## Technologies
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+	* This project uses HTML as the main language used to complete the structure of the Website.
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+	* This project uses custom written CSS to style the Website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+	* This project uses JavaScript for functionality through the Website, this includes the Cranky Bird game, onclick button functions.
+* [Bootstrap](https://getbootstrap.com/)
+	* The Bootstrap framework is used throughout this website for layouts and styling. 
+* [Gitpod](https://gitpod.io/workspaces)
+	* Gitpod is used to develop the Website.
+* [GitHub](https://github.com/)
+	* GithHub is the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
+* [Git](https://git-scm.com/)
+	* Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
+* [Figma](https://www.figma.com/file/7ic47sIHwTefP0dWBJdFzB/Untitled?node-id=0%3A1)
+	* This was used to create wireframes for 'The Skeleton Plane' stage of UX design.
+* [Favicon](https://favicon.io/)
+    * Favicon.io was used to make the site favicon 
+* [Techsini](http://techsini.com/multi-mockup/index.php)
+    * tecnisih.com Multi Device Website Mockup Generator was used to create the Mock up image in this README.
+* [Excel](https://www.microsoft.com/en-ie/microsoft-365/excel)
+    * Excel was used to create the bar chart diplaying difficulty / importance information.
+
+****
+## Testing
+
+### Test Strategy
+#### **Summary**
+
+Testing is required on The Cranky Bird game created for Milestone Project 2. All features and user stories documented in the README are to be tested. 
+
+HTML code must pass through the [W3C HTML Validator](https://validator.w3.org/).
+
+CSS code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+
+JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
+
+#### **High Level Test Cases**
+![Test Cases]()
+
+User Stories covered:
+* As a user, I want to view the website and content clearly on my computer. - TC001, TC002, TC003
+* As a user, I want to easily understand the main purpose of the site. - TC004
+* As a user, I want to have instructions on how to play the game so that I can easily understand the rules. - TC005
+* As a user, I want to be able to start a game when I am ready. - TC006
+* As a user, I want to see a bird fly up and down. - TC007
+* As a user, I want a way to start a new game when the current game has ended. - TC008
+* As a user, I want to know whether my bird hits a barrier correctly. - TC009
+* As a user, I want to see my score so that I know how many obstacles I have evaded. - TC010
+* As a user, I want to see contact information for the site owner incase I want to reach out with any queries I have about the site. - TC012
+* As a user, I want to see other work the site owner has created useing their GitHub profile / repositories. - TC013
+
+#### **Access Requirements**
+
+GitHub Respoitory must be set to public for the live website to be displayed.
+
+#### **Regression Testing**
+
+All features previously tested while in development should be retested on the live Website.
+
+#### **Assumptions and Dependencies**
+
+Testing is dependent on website being live on GitHub pages.
+
+#### **Out of Scope**
+
+Only testing listed under High Level Test Cases will be performed as part of this test effort.
+
+### Test Results
+
+![Results]()<br>
+Full test results can be found [here]()<br>
+Please note these results are a .xlsx file and will require excel, google docs or compatiable program to open the file.<br>
+All tests passed.
+
+### Issues and Resolutions to issues found during testing
+* Email mailto link was broken due to a space between the mailto and email. This was found when running code through jshint.com and was fixed by removing the space.
+* Clicking on the screen would multiply the game speed because it was constantly running the animatie() function. It was found using jshift, fixed by making it so when you click on the start button it runs the animate() function.
+* Restart button wasnt working properly, when you pressed it the speed was not reset it would keep the previous games speed if the user made it to 20 plus score in the previous score. It was fixed by created a second button that refreshes the page to reset the game.
+* Game speed wasnt increasing when the user hit 20 points. It was fixed by using "if ((score%20) === 0)" to devide by 20 to recognise the marker to increase the speed of the game.
+****
+## Deployment
+
+### Using Github Pages
+1. Navigate to the GitHub [Repository](https://github.com/dylanocallaghan/Milestone2)
+1. Click the 'Settings' Tab.
+1. Scroll Down to the Git Hub Pages Heading.
+1. Select 'Master Branch' as the source.
+1. Click the Save button.
+1. Click on the link to go to the live deployed page.
+
+### Run Locally
+1. Navigate to the GitHub [Repository](https://github.com/dylanocallaghan/Milestone2)
+1. Click the Code drop down menu.
+1. Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
+1. Open your developement editor of choice and open a terminal window in a directory of your choice.
+1. Use the 'git clone' command in terminal followed by the copied git URL.
+1. A clone of the project will be created locally on your machine.
+
+****
+## Credits
+
+### Code
+The JavaScript used to create this HTML canvas game was inspired by different out put such as [youtube link](https://www.youtube.com/watch?v=eI9idPTT0c4) to help with the start and restart button and [phaser](http://phaser.io/) to help me with different aspects and game ideas.
+
+### Acknowledgements
+I would like to thank slack user Spence_mentor for his help and pointers throughout this project. He also helped me with different problems like the restart button not working correctly. Gave me ideas to help the game run better.
+****
