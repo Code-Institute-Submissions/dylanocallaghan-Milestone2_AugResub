@@ -1,6 +1,6 @@
 # Cranky Bird 
 
-The live website can be found [here]
+The live website can be found [here]()
 
 ## Purpose
 
@@ -20,9 +20,9 @@ This Website was created for the sole purpose of completing the second Milestone
             * [Typography](#Typography)
             * [Imagery](#Imagery)
     * [Differences to Design](#Differences-to-Design)
-- [Features](#Features)
-    * [Existing Features](#Existing-Features)
-    * [Future Features](#Features-Left-to-Implement)
+- [Actions](#Actions)
+    * [Existing Actions](#Existing-Actions)
+    * [Future Actions](#Actions-Left-to-Implement)
 * [Technologies](#Technologies)
 * [Testing](#Testing)
     * [Test Strategy](#Test-Strategy)
@@ -61,7 +61,7 @@ Site Goals:
 * As a user, I want to see other work the site owner has created useing their GitHub profile / repositories.
 
 ### **The Scope Plane**
-Features planned:
+Actions planned:
 * Page Heading - A page heading that has a clear caption what the page is about.
 * An interactive Cranky Bird game.
 * Game Instructions - Clear instructions on how to play the game before starting the game.
@@ -72,8 +72,8 @@ Features planned:
 * Game over message supplied.
 * Footer Items - Contact Information and link GitHub Profile / Repository.
 
-**Feature Importance/Effort** <br>
-![Features]()
+**Action Importance/Effort** <br>
+![Actions](assets/actions.png)
 
 ### **The Structure Plane**
 
@@ -180,7 +180,7 @@ GitHub Repositpry information will be displayed in the footer. This should conta
 
 ### **The Skeleton Plane**
 #### Wireframes
-Desktop aim
+Desktop view
 ![Wireframes](assets/wireframe.jpg)
 
 ### **The Surface Plane**
@@ -188,8 +188,8 @@ Desktop aim
 
 #### Colour Scheme
 Body colour: White<br>
-Text colour: blue<br> 
-Game Board background colour: multicoloured <br>
+Text colour: Blue<br> 
+Game Board background colour: Multicoloured <br>
 Header and Footer background: A light greeen #98FB98<br>
 
 #### Typography
@@ -200,12 +200,12 @@ The image of the bird was take from OpenGameArt.org and was used by making the i
 
 #### Differences to Design
 
-All features listed in The Scope Plane were implemented as per design.
+All actions listed in The Scope Plane were implemented as per design.
 
 ****
-## Features
+## Actions
 
-### Existing Features
+### Existing Actions
 
 * Heading and Sub-heading.
 * Game Instructions.
@@ -214,7 +214,7 @@ All features listed in The Scope Plane were implemented as per design.
 * Buttons to start and re-start game.
 * Footer - Contact Information and GitHub Repo Information
 
-### Features Left to Implement
+### Actions Left to Implement
 
 * Levels: 'Easy' and 'Hard' mode will be added in a future release. The easy level will be at a slow speed with the obstaclefurther apart to give the user an easier chance to make it past obstacles. Hard mode will start with the speed faster, also the obstacles will be closer together to give a more challenging expierence for the user.
 
@@ -249,7 +249,7 @@ All features listed in The Scope Plane were implemented as per design.
 ### Test Strategy
 #### **Summary**
 
-Testing is required on The Cranky Bird game created for Milestone Project 2. All features and user stories documented in the README are to be tested. 
+Testing is required on The Cranky Bird game created for Milestone Project 2. All actions and user stories documented in the README are to be tested. 
 
 HTML code must pass through the [W3C HTML Validator](https://validator.w3.org/).
 
@@ -258,19 +258,18 @@ CSS code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-val
 JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
 
 #### **High Level Test Cases**
-![Test Cases]()
+![Test Cases](assets/test-cases.png)
 
 User Stories covered:
 * As a user, I want to view the website and content clearly on my computer. - TC001, TC002, TC003
 * As a user, I want to easily understand the main purpose of the site. - TC004
 * As a user, I want to have instructions on how to play the game so that I can easily understand the rules. - TC005
-* As a user, I want to be able to start a game when I am ready. - TC006
-* As a user, I want to see a bird fly up and down. - TC007
+* As a user, I want to be able to start a game when I am ready. - TC008
 * As a user, I want a way to start a new game when the current game has ended. - TC008
-* As a user, I want to know whether my bird hits a barrier correctly. - TC009
+* As a user, I want to know whether my bird hits a barrier correctly. - TC007
 * As a user, I want to see my score so that I know how many obstacles I have evaded. - TC010
-* As a user, I want to see contact information for the site owner incase I want to reach out with any queries I have about the site. - TC012
-* As a user, I want to see other work the site owner has created useing their GitHub profile / repositories. - TC013
+* As a user, I want to see contact information for the site owner incase I want to reach out with any queries I have about the site. - TC013
+* As a user, I want to see other work the site owner has created useing their GitHub profile / repositories. - TC014
 
 #### **Access Requirements**
 
@@ -278,7 +277,7 @@ GitHub Respoitory must be set to public for the live website to be displayed.
 
 #### **Regression Testing**
 
-All features previously tested while in development should be retested on the live Website.
+All actions previously tested while in development should be retested on the live Website.
 
 #### **Assumptions and Dependencies**
 
@@ -290,8 +289,8 @@ Only testing listed under High Level Test Cases will be performed as part of thi
 
 ### Test Results
 
-![Results]()<br>
-Full test results can be found [here]()<br>
+![Results](assets/test-results.png)<br>
+Full test results can be found [here](assets/MS2-test-results.xlsx)<br>
 Please note these results are a .xlsx file and will require excel, google docs or compatiable program to open the file.<br>
 All tests passed.
 
