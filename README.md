@@ -32,9 +32,9 @@ This Website was created for the sole purpose of completing the second Milestone
     * [Isses and Resolutions](#Issues-and-Resolutions-to-issues-found-during-testing)
 * [Deployment](#Deployment)
     * [GitHub Pages](#Using-Github-Pages)
-    * [Locally](Run-Locally)
+    * [Locally](#Run-Locally)
 * [Credits](#Credits)
-  * [Content](#Content)
+  * [Code](#Code)
   * [Acknowledgements](#Acknowledgements)
 
 ****
@@ -293,7 +293,7 @@ Only testing listed under High Level Test Cases will be performed as part of thi
 ![Results](assets/test-results.png)<br>
 Full test results can be found [here](assets/MS2-test-results.xlsx)<br>
 Please note these results are a .xlsx file and will require excel, google docs or compatiable program to open the file.<br>
-All tests passed.
+All tests passed adn only a dew minor warnings with teh validation of the codes.
 
 ### Issues and Resolutions to issues found during testing
 * I was going to create a game similar to "Breakout" but i discovered when you changed the desktop size it would change the coordinate system. which then made it so you couldn't fire the pellet in some directions. I couldnt find a resoulution to this so I decided I would change the game type I was going to create.

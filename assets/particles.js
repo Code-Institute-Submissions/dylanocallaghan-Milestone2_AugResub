@@ -8,7 +8,7 @@ class Particle {
     }
     update() {
         this.x -= gamespeed;
-        this.y += this.speedY
+        this.y += this.speedY;
     }
     draw(){
         ctx.fillStyle = this.color;
@@ -19,7 +19,7 @@ class Particle {
 }
 
 function handleParticles(){
-    particlesArray.unshift(new Particle);
+    particlesArray.unshift(new Particle());
     for(i = 0; i < particlesArray.length; i++) {
         particlesArray[i].update();
         particlesArray[i].draw();

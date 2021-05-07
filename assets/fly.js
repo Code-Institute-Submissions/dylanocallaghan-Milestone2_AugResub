@@ -1,16 +1,16 @@
-const canvas = document.querySelector('canvas')
-const startGameBtn = document.querySelector('#startGameBtn')
-const modalEl = document.querySelector('#modalEl')
-const modal2 = document.querySelector('#modal2')
-const bigScoreEl = document.querySelector('#bigScoreEl')
-const bigScore2 = document.querySelector('#bigScore2')
-const ctx = canvas.getContext('2d')
+const canvas = document.querySelector('canvas');
+const startGameBtn = document.querySelector('#startGameBtn');
+const modalEl = document.querySelector('#modalEl');
+const modal2 = document.querySelector('#modal2');
+const bigScoreEl = document.querySelector('#bigScoreEl');
+const bigScore2 = document.querySelector('#bigScore2');
+const ctx = canvas.getContext('2d');
 
-canvas.width = 600
-canvas.height = 400
+canvas.width = 600;
+canvas.height = 400;
 
-let particlesArray = []
-let obstaclesArray = []
+let particlesArray = [];
+let obstaclesArray = [];
 
 let spacePressed = false;
 let angle = 0;
@@ -20,11 +20,11 @@ let score = 0;
 let gamespeed = 2;
 
 const gradiant = ctx.createLinearGradient(0, 0, 0, 70);
-gradiant.addColorStop('0.25', '#fff')
-gradiant.addColorStop('0.45', '#000')
-gradiant.addColorStop('0.55', '#4040ff')
-gradiant.addColorStop('0.65', '#000')
-gradiant.addColorStop('0.85', '#fff')
+gradiant.addColorStop('0.25', '#fff');
+gradiant.addColorStop('0.45', '#000');
+gradiant.addColorStop('0.55', '#4040ff');
+gradiant.addColorStop('0.65', '#000');
+gradiant.addColorStop('0.85', '#fff');
 
 const background = new Image() ;
 background.src = 'assets/BG.png';
@@ -34,12 +34,12 @@ const BG = {
     y: 0,
     width: canvas.width,
     height: canvas.height
-}
+};
 function handleBackground(){
     if (BG.x1 <= -BG.width + gamespeed) BG.x1 = BG.width;
     else BG.x1 -= gamespeed;
     if (BG.x2 <= -BG.width + gamespeed) BG.x2 = BG.width;
-    else (BG.x2-= gamespeed)
+    else (BG.x2-= gamespeed);
     ctx.drawImage(background, BG.x1, BG.y, BG.width, BG.height) ;
     ctx.drawImage(background, BG.x2, BG.y, BG.width, BG.height) ;
 }
@@ -88,8 +88,8 @@ function handleCollisions() {
             (bird.y > canvas.height - obstaclesArray[i].bottom &&
             bird.y + bird.height < canvas.height))){
                 ctx.drawImage(hit, bird.x, bird.y, 50, 50); 
-                modal2.style.display = 'flex'
-                bigScore2.innerHTML = score
+                modal2.style.display = 'flex';
+                bigScore2.innerHTML = score;
                 
                 return true;
             }
@@ -99,5 +99,5 @@ function handleCollisions() {
 startGameBtn.addEventListener('click', ()=> {
     init();
     animate();
-    modalEl.style.display = 'none'
-})
+    modalEl.style.display = 'none';
+});
