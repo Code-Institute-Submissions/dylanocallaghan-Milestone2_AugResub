@@ -59,8 +59,8 @@ Site Goals:
 * As a user, I want to see a bird fly up and down.
 * As a user, I want to know when my bird hits a barrier.
 * As a user, I want an effortless way to begin a new game when the current game has ended.
-* As a user, I want to see my score so that I know how many obstacles I have evaded.
-* As a user, I want to contact information for the site owner to be readily available in the event that I need to reach out with a site-related query.
+* As a user, I want to see my score so that I know how many obstacles I have successfully evaded.
+* As a user, I want the site owner's contact information to be readily available in the event that I need to reach out with a site-related query.
 * As a user, I want to see other work the site owner has created using their GitHub profile / repositories.
 
 ### **The Scope Plane**
@@ -102,26 +102,26 @@ Bootstrap will be used to lay the content of the website out in containers, rows
 The colours should be coordinated for maximum clarity and to ensure they are appealing to the user.
 
 User Story:
-> As a user, I want to have instructions on how to play the game so that I can easily understand the rules.
+> As a user, I want to have instructions on how to play the game so that I can understand the rules.
  
  Acceptance Criteria:
  * Game Instructions are provided that contain the following information:
     * How to interact with the game.
     * How to lose the game.
-    * If there are any additional features that I should be aware of, e.g. speed increasing when I pass a certain level.
+    * Any additional features that the user should be aware of, e.g. speed increasing when I pass a certain level.
 
 Description:<br>
 Information to be included:
-A full set of game instructions will be added as a modal to make sure its read before the game begins. This will display to the user, information on how to control the bird, how the spped of the game increases and how to lose the game.<br>
-If the bird is to touch an obstacle the bird will explode.<br>
-If you lose the game, the score will be revealed to ensure the user is able to see what theer end score was.<br>
-Only a space bar input will be accepted to maneuver the character up and down.<br>
+A full set of game instructions will be added as a modal to make sure it can be read before the game begins. This will provide the user with information on how to control the bird, how the speed of the game increases and how the user might lose the game.<br>
+If the bird touches an obstacle the bird will explode and a visual 'POW!' will appear.<br>
+If the user loses the game, the score will be appear on-screen to ensure the user is aware of their end score.<br>
+Only a space bar input will be accepted to manoeuvre the character up and down.<br>
 
 User Story:
 > As a user, I want to be able to start a game when I am ready.
  
  Acceptance Criteria:
- * User can initiate start game
+ * User can initiate start game.
 
 Description:<br>
 A button will be added to the "How to play" modal to allow the user to start a game.
@@ -136,26 +136,26 @@ Description:<br>
 The bird will fall downwards on the screen unless spacebar is pressed in which case it will go upwards.
 
 User Story:
-> As a user, I want to know whether my bird hits a barrier correctly.
+> As a user, I want to know when my bird hits a barrier.
  
  Acceptance Criteria:
- * A death modal will apear if the characters hitbox enters an obstacles area.
+ * A death modal will appear if the character's hitbox enters the obstacles area.
 
 Description:<br>
-If the successful in avoiding an obstacle, the score will increase and the game will continue.<br>
-If the successful in avoiding an obstacle, the game will end and a modal will appear with the users score and a play again button.
+If the user is successful in avoiding an obstacle, the score will increase and the game will continue.<br>
+If the user is unsuccessful in avoiding an obstacle, the game will end and a modal will appear with the user's score and a 'play again' button.
 
 User Story:
-> As a user, I want a way to start a new game when the current game has ended.
+> As a user, I want an effortless way to begin a new game when the current game has ended.
  
  Acceptance Criteria:
- * User has a way to restart the game by the end game modal that will reset the whole game.
+ * User has a way to restart the game by the end game modal. This function will reset the whole game.
 
 Description:<br>
-A button will be added to the end game modal that will refresh the game and create new game with new obstacles and the orginal gamespeed.
+A button will be added to the end game modal that will refresh the game, create a  new game with new obstacles and reset the game at the original gamespeed.
 
 User Story:
-> As a user, I want to see my score so that I know how many obstacles I have evaded.
+> As a user, I want to see my score so that I know how many obstacles I have successfully evaded.
  
  Acceptance Criteria:
  * User score displayed on screen upon game over
@@ -164,23 +164,23 @@ Description:<br>
 A score will be added to the page to show the user how many obstacles they have avoided during their session. This score will only be displayed for the current session. Once the game is reset, the score will reset for a new game.
 
 User Story:
-> As a user, I want to see contact information for the site owner incase I want to reach out with any queries I have about the site.
+> As a user, I want the site owner's contact information to be readily available in the event that I need to reach out with a site-related query.
  
  Acceptance Criteria:
- * Contact Information displayed in footer.
+ * Contact information displayed in footer.
 
 Description:<br>
-Contact information will be added to the footer. This will contain a name and email for the site owner.
+Contact information will be added to the footer; this will include the name and email address of the site owner.
 
 User Story:
-> As a user, I want to see other work the site owner has created useing their GitHub profile / repositories.
+> As a user, I want to see other work the site owner has created using their GitHub profile / repositories.
  
  Acceptance Criteria:
- * GitHub Repositry information is displayed
- * GitHub Icon displayed that directs to GitHub Profile
+ * GitHub Repository information is included.
+ * GitHub Icon featured that directs the user to the site owner's GitHub Profile.
 
 Description:<br>
-GitHub Repository information will be displayed in the footer. This should contain the site owners GitHub user name and an icon that when clicked will direct to the owners GitHub page.
+The site owner's GitHub Repository information will be included in the footer. This should contain the site owner's GitHub username. It will also feature a GitHub icon, when the user clicks on this icon they will be directed to the owner's GitHub page.
 
 
 ### **The Skeleton Plane**
@@ -195,17 +195,17 @@ Desktop view
 Body colour: White<br>
 Text colour: Blue<br> 
 Game Board background colour: Multicoloured <br>
-Header and Footer background: A light greeen #98FB98<br>
+Header and Footer background: A light green #98FB98<br>
 
 #### Typography
-All the text within the body is in the font "Times" including all modals and buttons.
+All of the text within the body is in the font "Times", this includes all modals and buttons.
 
 #### Imagery
-The image of the bird was take from OpenGameArt.org and was used by making the images into a sprite with codeandweb.com.
+The image of the bird was taken from OpenGameArt.org and the image was made into a sprite using codeandweb.com.
 
 #### Differences to Design
 
-All actions listed in The Scope Plane were implemented as per design.
+All actions listed in the Scope Plane were implemented as per design.
 
 ****
 ## Actions
@@ -217,36 +217,36 @@ All actions listed in The Scope Plane were implemented as per design.
 * Scorecount.
 * Spacebar input.
 * Buttons to start and re-start game.
-* Footer - Contact Information and GitHub Repo Information
+* Footer - Contact Information and GitHub Repository Information
 
 ### Actions Left to Implement
 
-* Levels: 'Easy' and 'Hard' mode will be added in a future release. The easy level will be at a slow speed with the obstaclefurther apart to give the user an easier chance to make it past obstacles. Hard mode will start with the speed faster, also the obstacles will be closer together to give a more challenging expierence for the user.
+* Levels: 'Easy' and 'Hard' mode will be added in a future release. The easy mode will be at a slow speed with a greater distance between obstacles, giving the user a higher chance of making it past the obstacles. The hard mode will start with a faster speed, the obstacles will also be closer together to provide the user with a more challenging experience.
 
 ****
 ## Technologies
 * [HTML](https://en.wikipedia.org/wiki/HTML)
-	* This project uses HTML as the main language used to complete the structure of the Website.
+	* HTML is the main language used to complete the structure of the website.
 * [CSS](https://en.wikipedia.org/wiki/CSS)
-	* This project uses custom written CSS to style the Website.
+	* Custom written CSS is used in this project to style the website.
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-	* This project uses JavaScript for functionality through the Website, this includes the Cranky Bird game, onclick button functions.
+	* JavaScript is used for functionality throughout the website; this applies to both the Cranky Bird game and the onclick button functions.
 * [Bootstrap](https://getbootstrap.com/)
-	* The Bootstrap framework is used throughout this website for layouts and styling. 
+	* The Bootstrap framework is used throughout the website for layouts and styling. 
 * [Gitpod](https://gitpod.io/workspaces)
-	* Gitpod is used to develop the Website.
+	* Gitpod is used to develop the website.
 * [GitHub](https://github.com/)
-	* GithHub is the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
+	* The source code for the website is stored in the hosting site GitHub. [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
 * [Git](https://git-scm.com/)
-	* Git is used as version control software to commit and push code to the GitHub repository where the source code is stored.
+	* Git is used as version control software to commit and push code to the GitHub repository (i.e. the storage location of the source code).
 * [Figma](https://www.figma.com/file/7ic47sIHwTefP0dWBJdFzB/Untitled?node-id=0%3A1)
-	* This was used to create wireframes for 'The Skeleton Plane' stage of UX design.
+	* The wireframes for 'The Skeleton Plane' stage of UX design were created using Figma.
 * [Favicon](https://favicon.io/)
-    * Favicon.io was used to make the site favicon 
+    * Favicon.io was used to make the site favicon. 
 * [Techsini](http://techsini.com/multi-mockup/index.php)
-    * tecnisih.com Multi Device Website Mockup Generator was used to create the Mock up image in this README.
+    * tecnisih.com Multi Device Website Mockup Generator was used to create the mockup image in this README.
 * [Excel](https://www.microsoft.com/en-ie/microsoft-365/excel)
-    * Excel was used to create the bar chart diplaying difficulty / importance information.
+    * Excel was used to create the bar chart illustrating difficulty / importance information.
 
 ****
 ## Testing
@@ -254,7 +254,7 @@ All actions listed in The Scope Plane were implemented as per design.
 ### Test Strategy
 #### **Summary**
 
-Testing is required on The Cranky Bird game created for Milestone Project 2. All actions and user stories documented in the README are to be tested. 
+As part of the Milestone Project 2, testing must be carried out on The Cranky Bird game. All actions and user stories documented in the README must be tested. 
 
 HTML code must pass through the [W3C HTML Validator](https://validator.w3.org/).
 
@@ -268,21 +268,21 @@ JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
 User Stories covered:
 * As a user, I want to view the website and content clearly on my computer. - TC001, TC002, TC003
 * As a user, I want to easily understand the main purpose of the site. - TC004
-* As a user, I want to have instructions on how to play the game so that I can easily understand the rules. - TC005
+* As a user, I want to have instructions on how to play the game so that I can understand the rules. - TC005
 * As a user, I want to be able to start a game when I am ready. - TC008
-* As a user, I want a way to start a new game when the current game has ended. - TC008
-* As a user, I want to know whether my bird hits a barrier correctly. - TC007
-* As a user, I want to see my score so that I know how many obstacles I have evaded. - TC010
-* As a user, I want to see contact information for the site owner incase I want to reach out with any queries I have about the site. - TC013
-* As a user, I want to see other work the site owner has created useing their GitHub profile / repositories. - TC014
+* As a user, I want an effortless way to begin a new game when the current game has ended. - TC008
+* As a user, I want to know when my bird hits a barrier. - TC007
+* As a user, I want to see my score so that I know how many obstacles I have successfully evaded. - TC010
+* As a user, I want the site owner's contact information to be readily available in the event that I need to reach out with a site-related query. - TC013
+* As a user, I want to see other work the site owner has created using their GitHub profile / repositories. - TC014
 
 #### **Access Requirements**
 
-GitHub Respoitory must be set to public for the live website to be displayed.
+GitHub Repository must be set to public for the live website to appear.
 
 #### **Regression Testing**
 
-All actions previously tested while in development should be retested on the live Website.
+Any actions that were previously tested while in development should be retested on the live website.
 
 #### **Assumptions and Dependencies**
 
@@ -290,37 +290,37 @@ Testing is dependent on website being live on GitHub pages.
 
 #### **Out of Scope**
 
-Only testing listed under High Level Test Cases will be performed as part of this test effort.
+The only testing that will be performed as part of this test effort is the testing listed under High Level Test Cases.
 
 ### Test Results
 
 ![Results](assets/test-results.png)<br>
-Full test results can be found [here](assets/MS2-test-results.xlsx)<br>
-Please note these results are a .xlsx file and will require excel, google docs or compatiable program to open the file.<br>
-All tests passed adn only a dew minor warnings with teh validation of the codes.
+Complete test results can be found [here](assets/MS2-test-results.xlsx)<br>
+Please note these results are a .xlsx file and will require excel, google docs or another compatible program to open the file.<br>
+All tests passed; a few minor warnings appeared when validating the codes.
 
 ### Issues and Resolutions to issues found during testing
-* I was going to create a game similar to "Breakout" but i discovered when you changed the desktop size it would change the coordinate system. which then made it so you couldn't fire the pellet in some directions. I couldnt find a resoulution to this so I decided I would change the game type I was going to create.
-* Email mailto link was broken due to a space between the mailto and email. This was found when running code through jshint.com and was fixed by removing the space.
-* Clicking on the screen would multiply the game speed because it was constantly running the animatie() function. It was found using jshift, fixed by making it so when you click on the start button it runs the animate() function.
-* Restart button wasnt working properly, when you pressed it the speed was not reset it would keep the previous games speed if the user made it to 20 plus score in the previous score. It was fixed by created a second button that refreshes the page to reset the game.
-* Game speed wasnt increasing when the user hit 20 points. It was fixed by using "if ((score%20) === 0)" to devide by 20 to recognise the marker to increase the speed of the game.
+* I was initially going to create a game similar to "Breakout" but I discovered that when you changed the desktop size it would change the coordinate system. This meant that you couldn't fire the pellet in some directions. I couldn't find a resolution to this so I decided to change the game type I was going to create.
+* Email link was broken due to a space between the mailto and email. This was found when running code through jshint.com and was fixed by removing the space.
+* Clicking on the screen would multiply the game speed because it was constantly running the animate() function. This issue was found using jshift, and was fixed by ensuring the animate() function runs when you click on the start button.
+* The restart button wasn't working properly, when you pressed it the speed did not reset, it would keep the previous game's speed. This meant an increased starting speed if the user had made it to 20 plus score in the previous game. It was fixed by creating a second button that refreshes the page to reset the game.
+* Game speed wasn't increasing when the user hit 20 points. This issue was fixed by using "if ((score%20) === 0)" to divide by 20 and thus to recognise the marker to increase the speed of the game.
 ****
 ## Deployment
 
 ### Using Github Pages
 1. Navigate to the GitHub [Repository](https://github.com/dylanocallaghan/Milestone2)
 1. Click the 'Settings' Tab.
-1. Scroll Down to the Git Hub Pages Heading.
+1. Scroll down to the Git Hub Pages Heading.
 1. Select 'Master Branch' as the source.
-1. Click the Save button.
-1. Click on the link to go to the live deployed page.
+1. Click the 'Save' button.
+1. Click on the link to take you to the live deployed page.
 
 ### Run Locally
 1. Navigate to the GitHub [Repository](https://github.com/dylanocallaghan/Milestone2)
-1. Click the Code drop down menu.
-1. Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
-1. Open your developement editor of choice and open a terminal window in a directory of your choice.
+1. Click the code drop down menu.
+1. Either download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
+1. Open your preferred development editor and open a terminal window in a directory of your choice.
 1. Use the 'git clone' command in terminal followed by the copied git URL.
 1. A clone of the project will be created locally on your machine.
 
@@ -328,8 +328,8 @@ All tests passed adn only a dew minor warnings with teh validation of the codes.
 ## Credits
 
 ### Code
-The JavaScript used to create this HTML canvas game was inspired by different out put such as [youtube link](https://www.youtube.com/watch?v=eI9idPTT0c4) to help with the start and restart button and [phaser](http://phaser.io/) to help me with different aspects and game ideas.
+The JavaScript used to create this HTML canvas game was inspired by different YouTube videos such as [youtube link](https://www.youtube.com/watch?v=eI9idPTT0c4). In addition, YouTube videos helped with the development of the start and restart buttons. Phaser was also used to help develop various aspects of the game and to stimulate game ideas [phaser](http://phaser.io/).
 
 ### Acknowledgements
-I would like to thank slack user Spence_mentor for his help and pointers throughout this project. He also helped me with different problems like the restart button not working correctly. Gave me ideas to help the game run better.
+I would like to thank Slack user Spence_mentor for his help and pointers throughout this project. Spence_mentor helped me with a range of problems, for example, resolving an issue with the restart button. Additionally, Spence_mentor offered guidance and support on how I could ensure the game ran more efficiently.
 ****
