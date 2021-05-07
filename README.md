@@ -6,7 +6,7 @@ The live website can be found [here](https://dylanocallaghan.github.io/Milestone
 
 ## Purpose
 
-This Website was created for the sole purpose of completing the second Milestone Project for the Code Institute's Full Stack Developer course. It was built using the knowledge gained from the HTML, CSS, User Centric Design, JavaScript Fundamentals and Interactive Frontend Development modules. A full list of technologies used can be found in the [technologies](#Technologies) section of this document.
+This website was based on an assignment for the Code Institute's Full Stack Developer course. For our second Milestone Project we were tasked with the creation of a game using JavaScript. The game was created based on information provided in the HTML, CSS, User Centric Design, JavaScript Fundamentals and Interactive Frontend Development modules. A full list of technologies used can be found in the [technologies](#Technologies) section of this document.
 
 ## Table of Contents
 * [User Experience Design (UX)](#User-Experience-Design)
@@ -41,36 +41,38 @@ This Website was created for the sole purpose of completing the second Milestone
 
 ## User Experience Design
 ### **The Strategy Plane**
-This website was created to showcase my knowledge of HTML, CSS & JavaScript and to provide users with some entertainment in the form of an online "Cranky Bird" game created with JavaScript. The game should be easy to understand, simple to interactive with and give feedback to the user on a desktop. This game was not created for mobile devices because you must use the space bar to fly up and down.
+The strategy behind the creation of this website focuses on a dual purpose. The first ambition was to illustrate my knowledge of HTML, CSS & JavaScript. The second ambition was to provide users with an entertaining and increasingly challenging game created with JavaScript. The end result is an online game called "Cranky Bird". The game created is easy to understand, interactive and gives performance-based feedback to the user on a desktop. This game was not created for mobile devices because you must use the space bar to fly up and down.
 
 Site Goals:
-* To showcase the skills I have learnt in HTML, CSS, JavaScript.
-* To provide users with an interactive game to play that has clear Win / Lose Scenarios.
-* To create an enjoyable, interactive game that makes the user want to stay and play again.
+* To demonstrate the skills I have learnt in HTML, CSS, JavaScript.
+* To create an aesthetically pleasing game that is visually satisfying to the user.
+* To provide users with relatively simple interactive game with clear Win / Lose outcomes.
+* To create an enjoyable game that challenges the user and makes the user want to stay and play again.
 * To create a game that makes the user want to return to the website.
+* To create a game that increases in difficulty based on user performance to ensure the objective remains interesting to the user and does not become repetitive.
 
 #### User stories
 * As a user, I want to easily understand the main purpose of the site.
 * As a user, I want to view the website and content clearly on my computer.
-* As a user, I want to have instructions on how to play the game so that I can easily understand the rules.
+* As a user, I want to have instructions on how to play the game so that I can understand the rules.
 * As a user, I want to be able to start a game when I am ready.
 * As a user, I want to see a bird fly up and down.
-* As a user, I want to know whether my bird hits a barrier correctly.
-* As a user, I want a way to start a new game when the current game has ended.
+* As a user, I want to know when my bird hits a barrier.
+* As a user, I want an effortless way to begin a new game when the current game has ended.
 * As a user, I want to see my score so that I know how many obstacles I have evaded.
-* As a user, I want to see contact information for the site owner incase I want to reach out with any queries I have about the site.
-* As a user, I want to see other work the site owner has created useing their GitHub profile / repositories.
+* As a user, I want to contact information for the site owner to be readily available in the event that I need to reach out with a site-related query.
+* As a user, I want to see other work the site owner has created using their GitHub profile / repositories.
 
 ### **The Scope Plane**
 Actions planned:
-* Page Heading - A page heading that has a clear caption what the page is about.
-* An interactive Cranky Bird game.
-* Game Instructions - Clear instructions on how to play the game before starting the game.
+* Page Heading: A page heading or caption that clearly defines what the page is about.
+* An interactive Cranky Bird game: visible on screen is a backdrop of trees and mountains, a blue bird wearing a hat, a multicoloured trail issuing from the bird as it flies, and large blue bars for the bird to navigate.
+* Game Instructions: Clear, concise instructions on how to play the game, visible to the user before they start the game.
 * Start Button.
 * Score Count.
 * Score displayed at end game.
 * Restart Game button.
-* Game over message supplied.
+* Appearance of Game Over message.
 * Footer Items - Contact Information and link GitHub Profile / Repository.
 
 **Action Importance/Effort** <br>
@@ -86,7 +88,7 @@ User Story:
 * Sub heading displayed with text 'Try to survive!'
 
 Description:<br>
-There will be a page heading added that reads 'Cranky Bird' with a tag line below it reading 'Try to survive!'. This will enable the users to immediately see what the site is about as soon as they enter.
+There will be a page heading added that reads 'Cranky Bird' with the tag line 'Try to survive!' below it. This will enable the users to gain an immediate overview and understanding of the site purpose when they enter.
 
 User Story:
 > As a user, I want to view the website and content clearly on my computer.
@@ -95,7 +97,9 @@ User Story:
  * Website layout is well displayed and readable on a desktop device.
 
 Description:<br>
-Bootstrap will be used to lay the content of the Website out in containers, rows and columns. No elements should overlap their containers and all items should be responsive so that no elements are too large to display properly.
+Bootstrap will be used to lay the content of the website out in containers, rows and columns. No elements should overlap their containers and all items should be responsive so that no elements are too large to display properly. 
+
+The colours should be coordinated for maximum clarity and to ensure they are appealing to the user.
 
 User Story:
 > As a user, I want to have instructions on how to play the game so that I can easily understand the rules.
@@ -103,8 +107,8 @@ User Story:
  Acceptance Criteria:
  * Game Instructions are provided that contain the following information:
     * How to interact with the game.
-    * How to win the game.
     * How to lose the game.
+    * If there are any additional features that I should be aware of, e.g. speed increasing when I pass a certain level.
 
 Description:<br>
 Information to be included:
@@ -176,7 +180,7 @@ User Story:
  * GitHub Icon displayed that directs to GitHub Profile
 
 Description:<br>
-GitHub Repositpry information will be displayed in the footer. This should contain the site owners GitHub user name and an icon that when clicked will direct to the owners GitHub page.
+GitHub Repository information will be displayed in the footer. This should contain the site owners GitHub user name and an icon that when clicked will direct to the owners GitHub page.
 
 
 ### **The Skeleton Plane**
