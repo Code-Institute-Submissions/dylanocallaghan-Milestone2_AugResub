@@ -296,6 +296,7 @@ Please note these results are a .xlsx file and will require excel, google docs o
 All tests passed.
 
 ### Issues and Resolutions to issues found during testing
+* I was going to create a game similar to "Breakout" but i discovered when you changed the desktop size it would change the coordinate system. which then made it so you couldn't fire the pellet in some directions. I couldnt find a resoulution to this so I decided I would change the game type I was going to create.
 * Email mailto link was broken due to a space between the mailto and email. This was found when running code through jshint.com and was fixed by removing the space.
 * Clicking on the screen would multiply the game speed because it was constantly running the animatie() function. It was found using jshift, fixed by making it so when you click on the start button it runs the animate() function.
 * Restart button wasnt working properly, when you pressed it the speed was not reset it would keep the previous games speed if the user made it to 20 plus score in the previous score. It was fixed by created a second button that refreshes the page to reset the game.
