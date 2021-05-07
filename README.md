@@ -1,5 +1,7 @@
 # Cranky Bird 
 
+![mockup](assets/mockup.png)
+
 The live website can be found [here](https://dylanocallaghan.github.io/Milestone2/)
 
 ## Purpose
