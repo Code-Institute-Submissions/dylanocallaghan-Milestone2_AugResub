@@ -1,17 +1,21 @@
 let userAgent = navigator.userAgent.toLowerCase(),
- width = screen.availWidth,
- height = screen.availHeight,
- userIsOnMobileDevice = checkIfUserIsOnMobileDevice(userAgent);
-if(userIsOnMobileDevice) {
- let messageElement = document.getElementById('message');
- messageElement.innerHTML = "Sorry you are on a mobile device, this game is only designed for deaktop users with a spacebar!"
-} 
+    width = screen.availWidth,
+    height = screen.availHeight,
+    userIsOnMobileDevice = checkIfUserIsOnMobileDevice(userAgent);
+if (userIsOnMobileDevice) {
+    let heading = document.getElementById('bigScoreEl');
+    heading.innerHTML = "WARNING";
+    let messageElement = document.getElementById('message');
+    messageElement.innerHTML = "Sorry you are on a mobile device, this game is only designed for deaktop users with a spacebar!";
+    let startGameBtn = document.getElementById('startGameBtn');
+    startGameBtn.remove();
+}
 
 function checkIfUserIsOnMobileDevice($userAgent) {
-   if($userAgent.includes('mobi') || $userAgent.includes('tablet')){
-      return true;
-   }
-   return false;
+    if ($userAgent.includes('mobi') || $userAgent.includes('tablet')) {
+        return true;
+    }
+    return false;
 }
 
 const canvas = document.querySelector('canvas');
@@ -42,7 +46,7 @@ gradiant.addColorStop('0.55', '#4040ff');
 gradiant.addColorStop('0.65', '#000');
 gradiant.addColorStop('0.85', '#fff');
 
-const background = new Image() ;
+const background = new Image();
 background.src = 'assets/images/BG.png';
 const BG = {
     x1: 0,
@@ -51,13 +55,14 @@ const BG = {
     width: canvas.width,
     height: canvas.height
 };
-function handleBackground(){
+
+function handleBackground() {
     if (BG.x1 <= -BG.width + gamespeed) BG.x1 = BG.width;
     else BG.x1 -= gamespeed;
     if (BG.x2 <= -BG.width + gamespeed) BG.x2 = BG.width;
-    else (BG.x2-= gamespeed);
-    ctx.drawImage(background, BG.x1, BG.y, BG.width, BG.height) ;
-    ctx.drawImage(background, BG.x2, BG.y, BG.width, BG.height) ;
+    else(BG.x2 -= gamespeed);
+    ctx.drawImage(background, BG.x1, BG.y, BG.width, BG.height);
+    ctx.drawImage(background, BG.x2, BG.y, BG.width, BG.height);
 }
 
 function init() {
@@ -74,23 +79,23 @@ function animate() {
     handleParticles();
     bird.update();
     bird.draw();
-    ctx.fillStyle = gradiant ;
+    ctx.fillStyle = gradiant;
     ctx.font = '90px sans-serif';
     ctx.strokeText(score, 450, 70);
     ctx.fillText(score, 450, 70);
     handleCollisions();
     if (handleCollisions()) return;
     requestAnimationFrame(animate);
-    angle+=0.06;
+    angle += 0.06;
     hue++;
     frame++;
 }
 
-window.addEventListener('keydown', function(e) {
+window.addEventListener('keydown', function (e) {
     if (e.code === 'Space') spacePressed = true;
 });
 
-window.addEventListener('keyup', function(e) {
+window.addEventListener('keyup', function (e) {
     if (e.code === 'Space') spacePressed = false;
     bird.frameX = 0;
 });
@@ -99,23 +104,24 @@ window.addEventListener('keyup', function(e) {
 
 const hit = new Image();
 hit.src = 'assets/images/hit.png';
+
 function handleCollisions() {
     for (let i = 0; i < obstaclesArray.length; i++) {
-        if (bird.x < obstaclesArray[i].x + obstaclesArray[i].width && 
+        if (bird.x < obstaclesArray[i].x + obstaclesArray[i].width &&
             bird.x + bird.width > obstaclesArray[i].x &&
             ((bird.y < 0 + obstaclesArray[i].top && bird.y + bird.height > 0) ||
-            (bird.y > canvas.height - obstaclesArray[i].bottom &&
-            bird.y + bird.height < canvas.height))){
-                ctx.drawImage(hit, bird.x, bird.y, 50, 50); 
-                modal2.style.display = 'flex';
-                bigScore2.innerHTML = score;
-                
-                return true;
-            }
+                (bird.y > canvas.height - obstaclesArray[i].bottom &&
+                    bird.y + bird.height < canvas.height))) {
+            ctx.drawImage(hit, bird.x, bird.y, 50, 50);
+            modal2.style.display = 'flex';
+            bigScore2.innerHTML = score;
+
+            return true;
+        }
     }
 }
 
-startGameBtn.addEventListener('click', ()=> {
+startGameBtn.addEventListener('click', () => {
     init();
     animate();
     modalEl.style.display = 'none';
