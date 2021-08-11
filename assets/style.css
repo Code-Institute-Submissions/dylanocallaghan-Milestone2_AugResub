@@ -35,7 +35,7 @@ h1 {
     margin: 0;
     width: 100vw;
     height: 10vh;
-    background-color:#98FB98;
+    background-color: #98FB98;
     color: blue;
     z-index: 1;
 }
@@ -45,9 +45,9 @@ i {
     align-items: center;
 }
 
-i:hover{
-   color: white;
-   transition: all ease-in-out .25s;
+i:hover {
+    color: white;
+    transition: all ease-in-out .25s;
 }
 
 p {
@@ -70,11 +70,11 @@ p a:link:hover {
     margin: 15rem;
 }
 
-#modal2{
+#modal2 {
     display: none;
 }
 
-#bg-modal{
+#bg-modal {
     background-color: #98FB98 !important;
     color: blue !important;
 }
@@ -91,7 +91,7 @@ section {
 }
 
 canvas {
-    height:73vmin;
+    height: 73vmin;
     width: 100vmin;
     border: 2px solid black;
     display: inline !important;
@@ -109,22 +109,37 @@ button:hover {
 }
 
 
- @media only screen and (max-width: 1605px) {
-     h1 {
-         font-size: 2rem !important;
-     }
-     h3 {
-         font-size: medium;
-     }
-     .end-game-UI{
-         margin-right: 8rem;
-     }
-     footer p {
-         font-size: .65rem !important;
-     }
+@media only screen and (max-width: 1605px) {
+    h1 {
+        font-size: 2rem !important;
+    }
 
-     footer a i {
+    h3 {
+        font-size: medium;
+    }
+
+    .end-game-UI {
+        margin-right: 8rem;
+    }
+
+    footer p {
+        font-size: .65rem !important;
+    }
+
+    footer a i {
         font-size: .65rem !important;
         font-weight: 900 !important;
-     }
- }
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    #modalEl {
+        width: 100%;
+    }
+    #bg-modal {
+        width: 100%;
+    }
+    .end-game-UI {
+        margin: 0;
+    }
+}
