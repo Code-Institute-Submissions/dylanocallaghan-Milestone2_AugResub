@@ -3,10 +3,10 @@ let userAgent = navigator.userAgent.toLowerCase(),
  height = screen.availHeight,
  userIsOnMobileDevice = checkIfUserIsOnMobileDevice(userAgent);
 if(userIsOnMobileDevice) {
- alert("You're on mobile!");
-} else {
- alert("You're on desktop!");
-}
+ let messageElement = document.getElementById('message');
+ messageElement.innerHTML = "Sorry you are on a mobile device, this game is only designed for deaktop users with a spacebar!"
+} 
+
 function checkIfUserIsOnMobileDevice($userAgent) {
    if($userAgent.includes('mobi') || $userAgent.includes('tablet')){
       return true;
