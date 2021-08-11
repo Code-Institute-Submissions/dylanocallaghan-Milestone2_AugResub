@@ -1,3 +1,19 @@
+let userAgent = navigator.userAgent.toLowerCase(),
+ width = screen.availWidth,
+ height = screen.availHeight,
+ userIsOnMobileDevice = checkIfUserIsOnMobileDevice(userAgent);
+if(userIsOnMobileDevice) {
+ alert("You're on mobile!");
+} else {
+ alert("You're on desktop!");
+}
+function checkIfUserIsOnMobileDevice($userAgent) {
+   if($userAgent.includes('mobi') || $userAgent.includes('tablet')){
+      return true;
+   }
+   return false;
+}
+
 const canvas = document.querySelector('canvas');
 const startGameBtn = document.querySelector('#startGameBtn');
 const modalEl = document.querySelector('#modalEl');
@@ -73,17 +89,12 @@ function animate() {
 window.addEventListener('keydown', function(e) {
     if (e.code === 'Space') spacePressed = true;
 });
-window.addEventListener('touchstart', function(e){
-    spacePressed = true;
-});
+
 window.addEventListener('keyup', function(e) {
     if (e.code === 'Space') spacePressed = false;
     bird.frameX = 0;
 });
-window.addEventListener('touchend', function(e){
-    spacePressed = false;
-    bird.frameX = 0;
-});
+
 
 
 const hit = new Image();
