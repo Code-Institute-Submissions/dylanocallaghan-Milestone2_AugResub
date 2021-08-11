@@ -1,5 +1,5 @@
 const birdySprite = new Image();
-birdySprite.src = 'assets/birdy.png';
+birdySprite.src = '../images/birdy.png';
 
 class Bird {
     constructor() {

@@ -27,7 +27,7 @@ gradiant.addColorStop('0.65', '#000');
 gradiant.addColorStop('0.85', '#fff');
 
 const background = new Image() ;
-background.src = 'assets/BG.png';
+background.src = '../images/BG.png';
 const BG = {
     x1: 0,
     x2: canvas.width,
@@ -79,7 +79,7 @@ window.addEventListener('keyup', function(e) {
 });
 
 const hit = new Image();
-hit.src = 'assets/hit.png';
+hit.src = '../images/hit.png';
 function handleCollisions() {
     for (let i = 0; i < obstaclesArray.length; i++) {
         if (bird.x < obstaclesArray[i].x + obstaclesArray[i].width && 

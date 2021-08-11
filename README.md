@@ -1,6 +1,6 @@
 # Cranky Bird 
 
-![mockup](assets/mockup.png)
+![mockup](assets/images/mockup.png)
 
 The live website can be found [here](https://dylanocallaghan.github.io/Milestone2/)
 
@@ -76,7 +76,7 @@ Actions planned:
 * Footer Items - Contact Information and link GitHub Profile / Repository.
 
 **Action Importance/Effort** <br>
-![Actions](assets/actions.png)
+![Actions](assets/images/actions.png)
 
 ### **The Structure Plane**
 
@@ -186,7 +186,7 @@ The site owner's GitHub Repository information will be included in the footer. T
 ### **The Skeleton Plane**
 #### Wireframes
 Desktop view
-![Wireframes](assets/wireframe.jpg)
+![Wireframes](assets/images/wireframe.jpg)
 
 ### **The Surface Plane**
 ### Design
@@ -263,7 +263,7 @@ CSS code must pass through the [W3C CSS Validator](https://jigsaw.w3.org/css-val
 JavaScript code must pass through the [JSHint Validator](https://jshint.com/).
 
 #### **High Level Test Cases**
-![Test Cases](assets/test-cases.png)
+![Test Cases](assets/images/test-cases.png)
 
 User Stories covered:
 * As a user, I want to view the website and content clearly on my computer. - TC001, TC002, TC003
@@ -294,8 +294,8 @@ The only testing that will be performed as part of this test effort is the testi
 
 ### Test Results
 
-![Results](assets/test-results.png)<br>
-Complete test results can be found [here](assets/MS2-test-results.xlsx)<br>
+![Results](assets/images/test-results.png)<br>
+Complete test results can be found [here](assets/images/MS2-test-results.xlsx)<br>
 Please note these results are a .xlsx file and will require excel, google docs or another compatible program to open the file.<br>
 All tests passed; a few minor warnings appeared when validating the codes.
 
